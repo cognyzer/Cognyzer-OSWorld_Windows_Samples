@@ -1,0 +1,129 @@
+{
+  "id": "win-ppt-medium-002",
+  "snapshot": "ppt",
+  "instruction": "I'm preparing a training presentation. Open 'Employee_Training.pptx' from the Documents folder and complete these tasks:\n\n1. On Slide 1, add subtitle text 'New Hire Orientation – January 2024' below the title\n2. On Slide 4, add speaker notes with this exact text: 'Explain each step in detail with examples from real projects'\n3. Then make the background cyan (rgb(0, 255, 255)) on all my slides\n4. Save the presentation\n\nThe presentation should have exactly 20 slides.",
+  "source": "Cognyzer",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/Cognyzer/OSWorld-Windows/resolve/main/Employee_Training.pptx",
+            "path": "C:\\Users\\cognyzer\\OneDrive\\Documents\\Employee_Training.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "C:\\Users\\cognyzer\\OneDrive\\Documents\\Employee_Training.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/win-ppt-medium-002",
+  "related_apps": [
+    "ppt"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Employee_Training - PowerPoint",
+          "strict": false
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(1);"
+          ]
+        }
+      }
+    ],
+    "func": [
+      "check_include_exclude"
+    ],
+    "conj": "and",
+    "expected": [
+      {
+        "type": "rule",
+        "rules": {
+          "include": [
+            "OK_ALL_CHECKS_PASSED"
+          ],
+          "exclude": [
+            "INCORRECT_SLIDE_COUNT",
+            "SLIDE1_MISSING_SUBTITLE",
+            "SLIDE4_MISSING_NOTES",
+            "SLIDE4_INCORRECT_NOTES",
+            "SLIDE1_NO_BACKGROUND_COLOR",
+            "SLIDE2_NO_BACKGROUND_COLOR",
+            "SLIDE3_NO_BACKGROUND_COLOR",
+            "SLIDE4_NO_BACKGROUND_COLOR",
+            "SLIDE5_NO_BACKGROUND_COLOR",
+            "SLIDE6_NO_BACKGROUND_COLOR",
+            "SLIDE7_NO_BACKGROUND_COLOR",
+            "SLIDE8_NO_BACKGROUND_COLOR",
+            "SLIDE9_NO_BACKGROUND_COLOR",
+            "SLIDE10_NO_BACKGROUND_COLOR",
+            "SLIDE11_NO_BACKGROUND_COLOR",
+            "SLIDE12_NO_BACKGROUND_COLOR",
+            "SLIDE13_NO_BACKGROUND_COLOR",
+            "SLIDE14_NO_BACKGROUND_COLOR",
+            "SLIDE15_NO_BACKGROUND_COLOR",
+            "SLIDE16_NO_BACKGROUND_COLOR",
+            "SLIDE17_NO_BACKGROUND_COLOR",
+            "SLIDE18_NO_BACKGROUND_COLOR",
+            "SLIDE19_NO_BACKGROUND_COLOR",
+            "SLIDE20_NO_BACKGROUND_COLOR",
+            "SLIDE1_NOT_CYAN_BACKGROUND",
+            "SLIDE2_NOT_CYAN_BACKGROUND",
+            "SLIDE3_NOT_CYAN_BACKGROUND",
+            "SLIDE4_NOT_CYAN_BACKGROUND",
+            "SLIDE5_NOT_CYAN_BACKGROUND",
+            "SLIDE6_NOT_CYAN_BACKGROUND",
+            "SLIDE7_NOT_CYAN_BACKGROUND",
+            "SLIDE8_NOT_CYAN_BACKGROUND",
+            "SLIDE9_NOT_CYAN_BACKGROUND",
+            "SLIDE10_NOT_CYAN_BACKGROUND",
+            "SLIDE11_NOT_CYAN_BACKGROUND",
+            "SLIDE12_NOT_CYAN_BACKGROUND",
+            "SLIDE13_NOT_CYAN_BACKGROUND",
+            "SLIDE14_NOT_CYAN_BACKGROUND",
+            "SLIDE15_NOT_CYAN_BACKGROUND",
+            "SLIDE16_NOT_CYAN_BACKGROUND",
+            "SLIDE17_NOT_CYAN_BACKGROUND",
+            "SLIDE18_NOT_CYAN_BACKGROUND",
+            "SLIDE19_NOT_CYAN_BACKGROUND",
+            "SLIDE20_NOT_CYAN_BACKGROUND"
+          ]
+        }
+      }
+    ],
+    "result": [
+      {
+        "type": "vm_command_line",
+        "command": [
+          "python",
+          "-c",
+          "import zipfile\\nimport xml.etree.ElementTree as ET\\nfrom pptx import Presentation\\nimport sys\\nimport requests\\nimport tempfile\\nimport os\\n\\nerrors = []\\npptx_path = \\\"C:/Users/cognyzer/OneDrive/Documents/Employee_Training.pptx\\\"\\n\\ntry:\\n    prs = Presentation(pptx_path)\\n    ns = {\\\"p\\\": \\\"http://schemas.openxmlformats.org/presentationml/2006/main\\\"}\\n    \\n    # Check 1: Exactly 20 slides\\n    if len(prs.slides) != 20:\\n        errors.append(\\\"INCORRECT_SLIDE_COUNT\\\")\\n    \\n    # Check 2: Slide 1 has subtitle text (normalize dashes for comparison)\\n    if len(prs.slides) > 0:\\n        slide1 = prs.slides[0]\\n        subtitle_found = False\\n        expected_subtitle = \\\"New Hire Orientation - January 2024\\\"\\n        \\n        for shape in slide1.shapes:\\n            if hasattr(shape, \\\"text_frame\\\"):\\n                text = shape.text_frame.text.strip()\\n                # Flexible matching: check for key parts (handles dash variations)\\n                if \\\"New Hire Orientation\\\" in text and \\\"January 2024\\\" in text:\\n                    subtitle_found = True\\n                    break\\n        \\n        if not subtitle_found:\\n            errors.append(\\\"SLIDE1_MISSING_SUBTITLE\\\")\\n    \\n    # Check 3: Slide 4 has speaker notes with exact text\\n    if len(prs.slides) >= 4:\\n        slide4 = prs.slides[3]\\n        expected_notes = \\\"Explain each step in detail with examples from real projects\\\"\\n        \\n        notes_slide = slide4.notes_slide\\n        if notes_slide and notes_slide.notes_text_frame:\\n            notes_text = notes_slide.notes_text_frame.text.strip()\\n            if expected_notes not in notes_text:\\n                errors.append(\\\"SLIDE4_INCORRECT_NOTES\\\")\\n        else:\\n            errors.append(\\\"SLIDE4_MISSING_NOTES\\\")\\n    \\n    # Check 4: All slides have cyan background (rgb(0, 255, 255))\\n    target_rgb = (0, 255, 255)\\n    tolerance = 5  # Allow small tolerance for color matching\\n    \\n    def get_slide_background_rgb(slide):\\n        fill = slide.background.fill\\n        if fill.type == 1:  # Solid fill\\n            try:\\n                if hasattr(fill.fore_color, \\\"rgb\\\"):\\n                    return fill.fore_color.rgb\\n            except:\\n                pass\\n        elif fill.type == 5:  # Inherit from master\\n            master_fill = slide.slide_layout.slide_master.background.fill\\n            if master_fill.type == 1:\\n                try:\\n                    if hasattr(master_fill.fore_color, \\\"rgb\\\"):\\n                        return master_fill.fore_color.rgb\\n                except:\\n                    pass\\n        return None\\n    \\n    for slide_idx, slide in enumerate(prs.slides, 1):\\n        bg_rgb = get_slide_background_rgb(slide)\\n        if bg_rgb is None:\\n            errors.append(f\\\"SLIDE{slide_idx}_NO_BACKGROUND_COLOR\\\")\\n        else:\\n            r, g, b = bg_rgb\\n            # Check if cyan (g and b should be high, r should be low)\\n            if not (g >= 250 and b >= 250 and r <= tolerance):\\n                errors.append(f\\\"SLIDE{slide_idx}_NOT_CYAN_BACKGROUND\\\")\\n    \\n    if not errors:\\n        print(\\\"OK_ALL_CHECKS_PASSED\\\")\\n    else:\\n        for err in errors:\\n            print(err)\\nexcept Exception as e:\\n    print(f\\\"VALIDATION_ERROR: {str(e)}\\\")\\n    sys.exit(1)"
+        ]
+      }
+    ],
+    "options": [
+      {}
+    ]
+  }
+}
