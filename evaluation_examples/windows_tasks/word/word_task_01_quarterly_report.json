@@ -1,0 +1,106 @@
+{
+  "id": "win-word-medium-001",
+  "snapshot": "word",
+  "instruction": "I need to prepare my essay 'ENG101_Essay.docx' for submission. The entire document needs to be double-spaced, the font must be 'Times New Roman' size 19, and I need to highlight the following key quote in yellow color: \"The goal is to teach in such a way as to produce the most learning from the least teaching.\" (Highlight only the text, not the quotation marks) This quote appears in the section about the evolving role of educators. Do not modify any other content in the document.",
+  "source": "Cognyzer",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/Cognyzer/OSWorld-Windows/resolve/main/Q4_Report_Draft.docx",
+            "path": "C:\\Users\\cognyzer\\OneDrive\\Desktop\\Q4_Report_Draft.docx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "C:\\Users\\cognyzer\\OneDrive\\Desktop\\Q4_Report_Draft.docx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/win-word-medium-001",
+  "related_apps": [
+    "word"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Q4_Report_Draft - Word",
+          "strict": false
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(1);"
+          ]
+        }
+      }
+    ],
+    "func": [
+      "check_include_exclude",
+      "compare_docx_files"
+    ],
+    "conj": "and",
+    "expected": [
+      {
+        "type": "rule",
+        "rules": {
+          "include": [
+            "OK_ALL_CHECKS_PASSED"
+          ],
+          "exclude": [
+            "NOT_DOUBLE_SPACED",
+            "WRONG_FONT_NAME",
+            "WRONG_FONT_SIZE",
+            "MISSING_HIGHLIGHT",
+            "VALIDATION_ERROR"
+          ]
+        }
+      },
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/Cognyzer/OSWorld-Windows/resolve/main/Q4_Report_Draft_Golden.docx",
+        "dest": "Q4_Report_Draft_Gold.docx"
+      }
+    ],
+    "result": [
+      {
+        "type": "vm_command_line",
+        "command": [
+          "python",
+          "-c",
+          "import sys\\nfrom docx import Document\\nfrom docx.shared import RGBColor\\nfrom docx.enum.text import WD_LINE_SPACING\\n\\nerrors = []\\ndocx_path = \\\"C:/Users/cognyzer/OneDrive/Desktop/Q4_Report_Draft.docx\\\"\\n\\ntry:\\n    doc = Document(docx_path)\\n    \\n    # Check 1: Double-spacing throughout the document\\n    non_double_spacing_paragraphs = []\\n    \\n    for para_idx, para in enumerate(doc.paragraphs):\\n        if not para.text.strip():\\n            continue  # Skip empty paragraphs\\n        \\n        line_spacing = para.paragraph_format.line_spacing\\n        line_spacing_rule = para.paragraph_format.line_spacing_rule\\n        \\n        # Check for double spacing (2.0 or DOUBLE)\\n        is_double = False\\n        if line_spacing_rule == WD_LINE_SPACING.DOUBLE:\\n            is_double = True\\n        elif line_spacing is not None:\\n            # Check if line_spacing is approximately 2.0 (allowing small tolerance)\\n            if abs(float(line_spacing) - 2.0) < 0.01:\\n                is_double = True\\n        \\n        if not is_double:\\n            non_double_spacing_paragraphs.append(para_idx + 1)\\n    \\n    if non_double_spacing_paragraphs:\\n        errors.append(\\\"NOT_DOUBLE_SPACED\\\")\\n    \\n    # Check 2: Font must be 'Times New Roman' size 19 throughout\\n    wrong_font_runs = []\\n    wrong_size_runs = []\\n    \\n    for para_idx, para in enumerate(doc.paragraphs):\\n        for run_idx, run in enumerate(para.runs):\\n            if not run.text.strip():\\n                continue  # Skip empty runs\\n            \\n            # Check font name\\n            font_name = run.font.name\\n            if font_name is None or font_name != \\\"Times New Roman\\\":\\n                wrong_font_runs.append(f\\\"Para{para_idx+1}_Run{run_idx+1}\\\")\\n            \\n            # Check font size\\n            font_size = run.font.size\\n            if font_size is None:\\n                # Check paragraph default font size\\n                if para.style.font.size is None or para.style.font.size.pt != 19:\\n                    wrong_size_runs.append(f\\\"Para{para_idx+1}_Run{run_idx+1}\\\")\\n            elif font_size.pt != 19:\\n                wrong_size_runs.append(f\\\"Para{para_idx+1}_Run{run_idx+1}\\\")\\n    \\n    if wrong_font_runs:\\n        errors.append(\\\"WRONG_FONT_NAME\\\")\\n    if wrong_size_runs:\\n        errors.append(\\\"WRONG_FONT_SIZE\\\")\\n    \\n    # Check 3: Highlight the specific quote in yellow color (RGB 255, 255, 0)\\n    target_quote = \\\"The goal is to teach in such a way as to produce the most learning from the least teaching.\\\"\\n# Yellow color range: R >= 240, G >= 240, B <= 50 (covers Word's yellow highlight variants)\\n    highlight_found = False\\n    quote_found = False\\n    \\n    for para in doc.paragraphs:\\n        if target_quote in para.text:\\n            quote_found = True\\n            # Check if the quote is highlighted\\n            for run in para.runs:\\n                if target_quote in run.text or (len(run.text) > 0 and target_quote[:20] in run.text):\\n                    if run.font.highlight_color is not None:\\n                        highlight_color = run.font.highlight_color\\n                        \\n                        # highlight_color can be WD_COLOR_INDEX (enum) or RGBColor\\n                        # Yellow highlight in Word is typically WD_COLOR_INDEX.YELLOW (7)\\n                        from docx.enum.dml import MSO_THEME_COLOR\\n                        from docx.shared import RGBColor\\n                        from docx.enum.text import WD_COLOR_INDEX\\n                        \\n                        is_yellow = False\\n                        \\n                        # Check if it's a WD_COLOR_INDEX (enum value)\\n                        if hasattr(highlight_color, 'value'):\\n                            # It's an enum - check if it's YELLOW\\n                            if highlight_color == WD_COLOR_INDEX.YELLOW:\\n                                is_yellow = True\\n                        # Check if it's an RGBColor object\\n                        elif isinstance(highlight_color, RGBColor):\\n                            # Convert RGBColor to RGB tuple and check yellow range\\n                            # RGBColor can be converted to int, then extract RGB\\n                            rgb_int = int(highlight_color)\\n                            r = (rgb_int >> 16) & 0xFF\\n                            g = (rgb_int >> 8) & 0xFF\\n                            b = rgb_int & 0xFF\\n                            # Yellow range: R >= 240, G >= 240, B <= 50\\n                            if (r >= 240 and g >= 240 and b <= 50):\\n                                is_yellow = True\\n                        # Check if it has .r, .g, .b attributes (some RGBColor variants)\\n                        elif hasattr(highlight_color, 'r') and hasattr(highlight_color, 'g') and hasattr(highlight_color, 'b'):\\n                            if (highlight_color.r >= 240 and highlight_color.g >= 240 and highlight_color.b <= 50):\\n                                is_yellow = True\\n                        \\n                        if is_yellow:\\n                            highlight_found = True\\n                            break\\n            if highlight_found:\\n                break\\n    \\n    if not quote_found:\\n        errors.append(\\\"QUOTE_NOT_FOUND\\\")\\n    elif not highlight_found:\\n        errors.append(\\\"MISSING_HIGHLIGHT\\\")\\n    \\n    # Output results\\n    if not errors:\\n        print(\\\"OK_ALL_CHECKS_PASSED\\\")\\n    else:\\n        for err in errors:\\n            print(err)\\n            \\nexcept Exception as e:\\n    print(f\\\"VALIDATION_ERROR: {str(e)}\\\")\\n    sys.exit(1)"
+        ]
+      },
+      {
+        "type": "vm_file",
+        "path": "C:\\Users\\cognyzer\\OneDrive\\Desktop\\Q4_Report_Draft.docx",
+        "dest": "Q4_Report_Draft.docx"
+      }
+    ],
+    "options": [
+      {},
+      {
+        "content_only": true,
+        "ignore_blanks": true,
+        "fuzzy_match": false
+      }
+    ]
+  }
+}

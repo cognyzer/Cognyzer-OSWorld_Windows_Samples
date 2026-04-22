@@ -1,0 +1,102 @@
+{
+  "id": "win-excel-medium-002",
+  "snapshot": "excel",
+  "instruction": "Help me create a financial dashboard from our expense tracking data. Open 'Expense_Tracker.xlsx' from Documents folder and perform these operations:\n\n1. In cell E1, add header 'Percentage', then in cells E2 through E13 calculate each row's percentage by dividing that row's Amount (column D) by the sum of D2:D13, then multiply by 100\n2. Format column E as percentage with 1 decimal place\n3. Freeze the top row (row 1) so headers stay visible when scrolling\n4. Save the workbook\n\nDo not modify existing data in columns A, B, C, D.",
+  "source": "Cognyzer",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/Cognyzer/OSWorld-Windows/resolve/main/Expense_Tracker.xlsx",
+            "path": "C:\\Users\\cognyzer\\OneDrive\\Documents\\Expense_Tracker.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "C:\\Users\\cognyzer\\OneDrive\\Documents\\Expense_Tracker.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/win-excel-medium-002",
+  "related_apps": [
+    "excel"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Expense_Tracker",
+          "strict": false
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(1);"
+          ]
+        }
+      }
+    ],
+    "func": [
+      "compare_table",
+      "check_include_exclude"
+    ],
+    "conj": "and",
+    "result": [
+      {
+        "type": "vm_file",
+        "path": "C:\\Users\\cognyzer\\OneDrive\\Documents\\Expense_Tracker.xlsx",
+        "dest": "Expense_Tracker.xlsx"
+      },
+      {
+        "type": "vm_command_line",
+        "command": [
+          "python",
+          "-c",
+          "import openpyxl; import sys; wb = openpyxl.load_workbook(r'C:\\Users\\cognyzer\\OneDrive\\Documents\\Expense_Tracker.xlsx', data_only=False); ws = wb.active; errors = [];\ne1 = ws['E1'].value; e2_formula = ws['E2'].value if ws['E2'].data_type == 'f' else None; e2_format = ws['E2'].number_format; freeze = ws.freeze_panes; expected_formula = '=D2/SUM(D$2:D$13)*100'; expected_format = '0.0%'; expected_freeze = 'A2'; has_e1 = e1 == 'Percentage'; has_formula = e2_formula == expected_formula; has_format = expected_format in e2_format or e2_format == '0.0%'; has_freeze = str(freeze) == expected_freeze; all_formulas_correct = True;\nfor i in range(2, 14):\n    cell = ws[f'E{i}']; expected = f'=D{i}/SUM(D$2:D$13)*100';\n    if cell.data_type != 'f' or cell.value != expected:\n        all_formulas_correct = False; break\nif not has_e1: errors.append('MISSING_PERCENTAGE_HEADER');\nif not has_formula: errors.append('INCORRECT_FORMULA');\nif not has_format: errors.append('INCORRECT_FORMAT');\nif not has_freeze: errors.append('MISSING_FREEZE_PANES');\nif not all_formulas_correct: errors.append('INCOMPLETE_FORMULAS');\nif not errors: print('OK_ALL_CHECKS_PASSED');\nelse:\n    for err in errors: print(err)"
+        ]
+      }
+    ],
+    "expected": [
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/Cognyzer/OSWorld-Windows/resolve/main/Expense_Tracker_Golden.xlsx",
+        "dest": "Expense_Tracker_Gold.xlsx"
+      },
+      {
+        "type": "rule",
+        "rules": {
+          "include": ["OK_ALL_CHECKS_PASSED"],
+          "exclude": ["MISSING_PERCENTAGE_HEADER", "INCORRECT_FORMULA", "INCORRECT_FORMAT", "MISSING_FREEZE_PANES", "INCOMPLETE_FORMULAS"]
+        }
+      }
+    ],
+    "options": [
+      {
+        "rules": [
+          {
+            "type": "sheet_data",
+            "sheet_idx0": 0,
+            "sheet_idx1": "EI0"
+          }
+        ]
+      },
+      {}
+    ]
+  }
+}

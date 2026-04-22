@@ -1,0 +1,17 @@
+# Commands for task: win-word-medium-001
+# Generated: 2026-01-17T22:21:09.724748
+# Source: SFT\win-word-medium-001\commands.txt
+
+pg.hotkey('ctrl','a')
+pg.click(811,213)
+pg.click(848,369)
+pg.click(268,155)
+pg.write("Times")
+pg.press("enter")
+pg.click(371,154)
+pg.write("19")
+pg.press("enter")
+pg.hotkey('ctrl', 'f')
+pg.typewrite("The goal is to teach in such a way as to produce the most learning from the least teaching.")
+pg.click(497,202)
+pg.hotkey('ctrl','s')

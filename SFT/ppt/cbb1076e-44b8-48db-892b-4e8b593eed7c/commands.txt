@@ -1,0 +1,16 @@
+# Commands for task: win-ppt-medium-001
+# Generated: 2026-01-17T16:47:32.799888
+# To replay: python windows_sft_recorder.py <task.json> --replay SFT\win-ppt-medium-001\commands.txt
+
+pg.click(1164,523)
+pg.hotkey('ctrl', 'a')
+pg.hotkey('ctrl','b')
+pg.click(325,804)
+pg.click(1087,608)
+pg.hotkey('ctrl','a')
+pg.click(902,166)
+pg.click(37,788)
+pg.hotkey('ctrl','a')
+pg.click(496,110)
+pg.click(431,180)
+pg.hotkey('ctrl','s')

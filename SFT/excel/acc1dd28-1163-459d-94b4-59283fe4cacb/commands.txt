@@ -1,0 +1,21 @@
+# Commands for task: win-excel-medium-002
+# Generated: 2026-01-17T15:19:39.856015
+# To replay: python windows_sft_recorder.py <task.json> --replay SFT\win-excel-medium-002\commands.txt
+
+pg.click(480,377)
+pg.typewrite("Percentage")
+pg.click(482,408)
+pg.write("=D2/SUM(D$2:D$13)*100")
+pg.press("enter")
+pg.press('up')
+pg.moveTo(519,407)
+pg.dragTo(515,758, duration=0.6)
+pg.hotkey('ctrl', '1')
+pg.click(632,502)
+pg.click(1012,450)
+pg.click(1134,966)
+pg.click(16,370)
+pg.hotkey('alt', 'w')
+pg.click(1378,220)
+pg.click(1478,374)
+pg.hotkey('ctrl','s')

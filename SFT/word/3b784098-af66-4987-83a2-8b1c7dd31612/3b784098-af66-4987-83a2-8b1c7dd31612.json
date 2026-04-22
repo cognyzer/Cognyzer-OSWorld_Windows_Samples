@@ -1,0 +1,107 @@
+{
+  "id": "3b784098-af66-4987-83a2-8b1c7dd31612",
+  "snapshot": "word",
+  "instruction": "I need to format my research paper 'Research_Paper.docx' in the Documents folder. Please make these specific changes:\n\n1. Center-align the title 'Climate Change Impact on Agriculture'\n2. Make the author name (which appears right after the title) bold and italic\n3. Change the font color of the word 'agriculture' (wherever it appears in the document) to blue #0000FF\n4. Save the file\n\nDo not modify any other text content or formatting.",
+  "source": "Cognyzer",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/Cognyzer/OSWorld-Windows/resolve/main/Research_Paper.docx",
+            "path": "C:\\Users\\pragn\\OneDrive\\Documents\\Research_Paper.docx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "C:\\Users\\pragn\\OneDrive\\Documents\\Research_Paper.docx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/3b784098-af66-4987-83a2-8b1c7dd31612",
+  "related_apps": [
+    "word"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Research_Paper - Word",
+          "strict": false
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(1);"
+          ]
+        }
+      }
+    ],
+    "func": [
+      "check_include_exclude",
+      "compare_docx_files"
+    ],
+    "conj": "and",
+    "expected": [
+      {
+        "type": "rule",
+        "rules": {
+          "include": [
+            "OK_ALL_CHECKS_PASSED"
+          ],
+          "exclude": [
+            "TITLE_NOT_FOUND",
+            "TITLE_NOT_CENTERED",
+            "AUTHOR_NOT_BOLD_ITALIC",
+            "AGRICULTURE_NOT_FOUND",
+            "AGRICULTURE_NOT_BLUE",
+            "VALIDATION_ERROR"
+          ]
+        }
+      },
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/Cognyzer/OSWorld-Windows/resolve/main/Research_Paper_Gold.docx",
+        "dest": "Research_Paper_Gold.docx"
+      }
+    ],
+    "result": [
+      {
+        "type": "vm_command_line",
+        "command": [
+          "python",
+          "-c",
+          "import sys\\nfrom docx import Document\\nfrom docx.enum.text import WD_PARAGRAPH_ALIGNMENT\\nfrom docx.shared import RGBColor\\n\\nerrors = []\\ndocx_path = \\\"C:/Users/pragn/OneDrive/Documents/Research_Paper.docx\\\"\\n\\ntry:\\n    doc = Document(docx_path)\\n    \\n    # Check 1: Title 'Climate Change Impact on Agriculture' is center-aligned\\n    title_found = False\\n    title_centered = False\\n    \\n    for para in doc.paragraphs:\\n        if 'Climate Change Impact on Agriculture' in para.text:\\n            title_found = True\\n            # Check alignment\\n            if para.alignment == WD_PARAGRAPH_ALIGNMENT.CENTER:\\n                title_centered = True\\n            break\\n    \\n    if not title_found:\\n        errors.append(\\\"TITLE_NOT_FOUND\\\")\\n    elif not title_centered:\\n        errors.append(\\\"TITLE_NOT_CENTERED\\\")\\n    \\n    # Check 2: Author name (right after title) is bold and italic\\n    # Find title paragraph index, then check next non-empty paragraph\\n    author_bold_italic = False\\n    title_idx = -1\\n    \\n    for idx, para in enumerate(doc.paragraphs):\\n        if 'Climate Change Impact on Agriculture' in para.text:\\n            title_idx = idx\\n            break\\n    \\n    if title_idx >= 0:\\n        # Find next non-empty paragraph (author name)\\n        for idx in range(title_idx + 1, len(doc.paragraphs)):\\n            para = doc.paragraphs[idx]\\n            if para.text.strip():\\n                # Check if all runs in this paragraph are bold and italic\\n                all_bold_italic = True\\n                has_runs = False\\n                \\n                for run in para.runs:\\n                    if run.text.strip():\\n                        has_runs = True\\n                        if not (run.font.bold and run.font.italic):\\n                            all_bold_italic = False\\n                            break\\n                \\n                if has_runs and all_bold_italic:\\n                    author_bold_italic = True\\n                break\\n    \\n    if not author_bold_italic:\\n        errors.append(\\\"AUTHOR_NOT_BOLD_ITALIC\\\")\\n    \\n    # Check 3: Word 'agriculture' (case-insensitive) has blue color (#0000FF)\\n    agriculture_blue = False\\n    agriculture_found = False\\n    target_rgb = RGBColor(0, 0, 255)  # Blue color\\n    target_hex = '0000FF'  # Blue hex color\\n    \\n    for para in doc.paragraphs:\\n        para_text_lower = para.text.lower()\\n        if 'agriculture' in para_text_lower:\\n            agriculture_found = True\\n            # Check each run for 'agriculture' word\\n            for run in para.runs:\\n                run_text_lower = run.text.lower()\\n                if 'agriculture' in run_text_lower:\\n                    # Check font color\\n                    if run.font.color:\\n                        # Check if it's an RGBColor object\\n                        if hasattr(run.font.color, 'rgb') and run.font.color.rgb:\\n                            rgb = run.font.color.rgb\\n                            # RGBColor can be compared directly or via string representation\\n                            # RGBColor(0, 0, 255) stringifies to '0000FF'\\n                            if rgb == target_rgb or str(rgb).upper() == target_hex:\\n                                agriculture_blue = True\\n                                break\\n            if agriculture_blue:\\n                break\\n    \\n    if not agriculture_found:\\n        errors.append(\\\"AGRICULTURE_NOT_FOUND\\\")\\n    elif not agriculture_blue:\\n        errors.append(\\\"AGRICULTURE_NOT_BLUE\\\")\\n    \\n    # Output results\\n    if not errors:\\n        print(\\\"OK_ALL_CHECKS_PASSED\\\")\\n    else:\\n        for err in errors:\\n            print(err)\\n            \\nexcept Exception as e:\\n    print(f\\\"VALIDATION_ERROR: {str(e)}\\\")\\n    sys.exit(1)"
+        ]
+      },
+      {
+        "type": "vm_file",
+        "path": "C:\\Users\\pragn\\OneDrive\\Documents\\Research_Paper.docx",
+        "dest": "Research_Paper.docx"
+      }
+    ],
+    "options": [
+      {},
+      {
+        "content_only": true,
+        "ignore_blanks": true,
+        "fuzzy_match": false
+      }
+    ]
+  }
+}

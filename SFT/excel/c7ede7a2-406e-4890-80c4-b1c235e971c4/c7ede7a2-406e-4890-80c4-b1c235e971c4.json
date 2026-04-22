@@ -1,0 +1,102 @@
+{
+  "id": "c7ede7a2-406e-4890-80c4-b1c235e971c4",
+  "snapshot": "excel",
+  "instruction": "I need you to analyze our monthly sales data. The file 'Monthly_Sales_2024.xlsx' is on the Desktop. Please complete these tasks:\n\n1. In cell E2, enter the value that equals C2 multiplied by D2 (Units Sold * Unit Price), then copy this calculation down to row 261\n2. In cell A262, enter 'TOTAL', then in cells C262, D262, and E262, calculate the SUM for each respective column\n3. Make the header row bold\n4. Save the file\n\nDo not modify the existing data in columns A, B, C, D.",
+  "source": "Cognyzer",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/Cognyzer/OSWorld-Windows/resolve/main/Monthly_Sales_2024.xlsx",
+            "path": "C:\\Users\\User\\OneDrive\\Desktop\\Monthly_Sales_2024.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "C:\\Users\\User\\OneDrive\\Desktop\\Monthly_Sales_2024.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/c7ede7a2-406e-4890-80c4-b1c235e971c4",
+  "related_apps": [
+    "excel"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Monthly_Sales_2024",
+          "strict": false
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(1);"
+          ]
+        }
+      }
+    ],
+    "func": [
+      "compare_table",
+      "check_include_exclude"
+    ],
+    "conj": "and",
+    "result": [
+      {
+        "type": "vm_file",
+        "path": "C:\\Users\\User\\OneDrive\\Desktop\\Monthly_Sales_2024.xlsx",
+        "dest": "Monthly_Sales_2024.xlsx"
+      },
+      {
+        "type": "vm_command_line",
+        "command": [
+          "python",
+          "-c",
+          "import openpyxl; wb = openpyxl.load_workbook(r'C:\\Users\\User\\OneDrive\\Desktop\\Monthly_Sales_2024.xlsx', data_only=False); ws = wb.active; errors = [];\nfor row in range(2, 262):\n    cell = ws[f'E{row}']; expected_formula = f'=C{row}*D{row}';\n    if cell.data_type != 'f' or cell.value != expected_formula: errors.append(f'INCORRECT_FORMULA_E{row}'); break\nc262 = ws['C262']; d262 = ws['D262']; e262 = ws['E262']; a262 = ws['A262'].value;\nif c262.data_type != 'f' or c262.value != '=SUM(C2:C261)': errors.append('INCORRECT_SUM_C262');\nif d262.data_type != 'f' or d262.value != '=SUM(D2:D261)': errors.append('INCORRECT_SUM_D262');\nif e262.data_type != 'f' or e262.value != '=SUM(E2:E261)': errors.append('INCORRECT_SUM_E262');\nif a262 != 'TOTAL': errors.append('MISSING_TOTAL_LABEL');\nheader_bold = all(ws[f'{col}1'].font.bold for col in ['A','B','C','D','E']);\nif not header_bold: errors.append('HEADER_NOT_BOLD');\nif not errors: print('OK_ALL_CHECKS_PASSED');\nelse:\n    for err in errors[:5]: print(err)"
+        ]
+      }
+    ],
+    "expected": [
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/Cognyzer/OSWorld-Windows/resolve/main/Monthly_Sales_Golden_File.xlsx",
+        "dest": "Monthly_Sales_2024_Gold.xlsx"
+      },
+      {
+        "type": "rule",
+        "rules": {
+          "include": ["OK_ALL_CHECKS_PASSED"],
+          "exclude": ["INCORRECT_FORMULA", "INCORRECT_SUM", "MISSING_TOTAL_LABEL", "HEADER_NOT_BOLD"]
+        }
+      }
+    ],
+    "options": [
+      {
+        "rules": [
+          {
+            "type": "sheet_data",
+            "sheet_idx0": 0,
+            "sheet_idx1": "EI0"
+          }
+        ]
+      },
+      {}
+    ]
+  }
+}

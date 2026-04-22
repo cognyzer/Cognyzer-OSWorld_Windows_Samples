@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='utf-8'?>
+<desktop-frame name="Desktop">
+  <window name="Expense_Tracker - Excel" cp:screencoord="(-11, -11)" cp:size="(1942, 1030)" st:enabled="true" st:visible="true">
+    <pane name="DropShadowTop" cp:screencoord="(0, 266)" cp:size="(1920, 9)" st:visible="true" />
+    <pane cp:screencoord="(0, 975)" cp:size="(1920, 33)" st:enabled="true" st:visible="true">
+      <toolbar cp:screencoord="(0, 975)" cp:size="(1920, 33)" st:enabled="true" st:visible="true">
+        <pane name="Status Bar" cp:screencoord="(0, 975)" cp:size="(1920, 33)" st:enabled="true" st:visible="true">
+          <pane cp:screencoord="(0, 975)" cp:size="(1920, 33)" st:enabled="true" st:visible="true">
+            <pane cp:screencoord="(0, 975)" cp:size="(1920, 33)" st:enabled="true" st:visible="true">
+              <statusbar name="Status Bar" cp:screencoord="(0, 975)" cp:size="(1920, 33)" st:enabled="true" st:visible="true">
+                <text name="Cell Mode Ready" cp:screencoord="(6, 976)" cp:size="(66, 32)" st:enabled="true" st:visible="true" />
+                <button name="Accessibility Checker Accessibility: Good to go" cp:screencoord="(77, 976)" cp:size="(219, 32)" st:enabled="true" st:visible="true" />
+                <button name="Count 5" cp:screencoord="(1378, 976)" cp:size="(81, 32)" st:enabled="true" st:visible="true" />
+                <button name="Normal" cp:screencoord="(1474, 976)" cp:size="(60, 32)" st:enabled="true" st:visible="true" />
+                <button name="Page Layout" cp:screencoord="(1534, 976)" cp:size="(60, 32)" st:enabled="true" st:visible="true" />
+                <button name="Page Break Preview" cp:screencoord="(1594, 976)" cp:size="(60, 32)" st:enabled="true" st:visible="true" />
+                <button name="Zoom Out" cp:screencoord="(1655, 976)" cp:size="(26, 32)" st:enabled="true" st:visible="true" />
+                <slider name="Zoom" cp:screencoord="(1681, 976)" cp:size="(150, 32)" st:enabled="true" st:visible="true">
+                  <button name="Zoom Out" cp:screencoord="(1681, 976)" cp:size="(71, 32)" st:enabled="true" st:visible="true" />
+                  <thumb name="Position" cp:screencoord="(1752, 983)" cp:size="(8, 17)" st:enabled="true" st:visible="true" />
+                  <button name="Zoom In" cp:screencoord="(1760, 976)" cp:size="(71, 32)" st:enabled="true" st:visible="true" />
+                </slider>
+                <button name="Zoom In" cp:screencoord="(1831, 976)" cp:size="(26, 32)" st:enabled="true" st:visible="true" />
+                <text name="Zoom 100%" cp:screencoord="(1857, 976)" cp:size="(63, 32)" st:enabled="true" st:visible="true" />
+              </statusbar>
+            </pane>
+          </pane>
+        </pane>
+      </toolbar>
+    </pane>
+    <pane cp:screencoord="(0, 0)" cp:size="(1920, 266)" st:enabled="true" st:visible="true">
+      <toolbar cp:screencoord="(0, 0)" cp:size="(1920, 266)" st:enabled="true" st:visible="true">
+        <pane name="Ribbon" cp:screencoord="(0, 0)" cp:size="(1920, 266)" st:enabled="true" st:visible="true">
+          <pane cp:screencoord="(0, 0)" cp:size="(1920, 266)" st:enabled="true" st:visible="true">
+            <pane cp:screencoord="(0, 0)" cp:size="(1920, 266)" st:enabled="true" st:visible="true">
+              <pane name="Ribbon" cp:screencoord="(0, 0)" cp:size="(1920, 266)" st:enabled="true" st:visible="true">
+                <toolbar name="Quick Access Toolbar" cp:screencoord="(63, 0)" cp:size="(359, 72)" st:enabled="true" st:visible="true">
+                  <button name="AutoSave" cp:screencoord="(63, 14)" cp:size="(158, 44)" st:enabled="true" st:visible="true" />
+                  <button name="Save" cp:screencoord="(222, 14)" cp:size="(42, 43)" st:enabled="true" st:visible="true" />
+                  <splitbutton name="Undo" cp:screencoord="(265, 14)" cp:size="(56, 43)" st:enabled="true" st:visible="true">
+                    <button name="Undo" cp:screencoord="(265, 14)" cp:size="(37, 43)" st:enabled="true" st:visible="true" />
+                    <menuitem name="More Options" cp:screencoord="(302, 14)" cp:size="(19, 43)" st:enabled="true" st:visible="true" />
+                  </splitbutton>
+                  <splitbutton name="Redo" cp:screencoord="(322, 14)" cp:size="(56, 43)" st:visible="true">
+                    <button name="Redo" cp:screencoord="(322, 14)" cp:size="(37, 43)" st:visible="true" />
+                    <menuitem name="More Options" cp:screencoord="(359, 14)" cp:size="(19, 43)" st:visible="true" />
+                  </splitbutton>
+                  <menuitem name="Customize Quick Access Toolbar" cp:screencoord="(380, 13)" cp:size="(42, 46)" st:enabled="true" st:visible="true" />
+                </toolbar>
+                <titlebar name="‪Expense_Tracker‬" cp:screencoord="(423, 0)" cp:size="(290, 72)" st:enabled="true" st:visible="true">
+                  <menuitem name="‪Expense_Tracker‬" cp:screencoord="(423, 0)" cp:size="(188, 72)" st:enabled="true" st:visible="true" />
+                </titlebar>
+                <menuitem name="Type to search and use the up and down arrow keys to navigate" cp:screencoord="(713, 12)" cp:size="(518, 48)" st:enabled="true" st:visible="true">
+                  <edit cp:screencoord="(774, 21)" cp:size="(438, 32)" st:enabled="true" st:visible="true" />
+                </menuitem>
+                <menuitem name="Pragnasya S" cp:screencoord="(1629, 0)" cp:size="(75, 72)" st:enabled="true" st:visible="true" />
+                <button name="Minimize" cp:screencoord="(1704, 0)" cp:size="(72, 72)" st:enabled="true" st:visible="true" />
+                <button name="Restore Down" cp:screencoord="(1776, 0)" cp:size="(72, 72)" st:enabled="true" st:visible="true" />
+                <button name="Close" cp:screencoord="(1848, 0)" cp:size="(72, 72)" st:enabled="true" st:visible="true" />
+                <button name="File Tab" cp:screencoord="(6, 72)" cp:size="(81, 45)" st:enabled="true" st:visible="true" />
+                <tab name="Ribbon Tabs" cp:screencoord="(87, 72)" cp:size="(1815, 45)" st:enabled="true" st:visible="true">
+                  <tabitem name="Home" cp:screencoord="(87, 72)" cp:size="(83, 45)" st:enabled="true" st:visible="true" />
+                  <tabitem name="Insert" cp:screencoord="(171, 72)" cp:size="(80, 45)" st:enabled="true" st:visible="true" />
+                  <tabitem name="Draw" cp:screencoord="(252, 72)" cp:size="(73, 45)" st:enabled="true" st:visible="true" />
+                  <tabitem name="Page Layout" cp:screencoord="(326, 72)" cp:size="(138, 45)" st:enabled="true" st:visible="true" />
+                  <tabitem name="Formulas" cp:screencoord="(465, 72)" cp:size="(110, 45)" st:enabled="true" st:visible="true" />
+                  <tabitem name="Data" cp:screencoord="(576, 72)" cp:size="(68, 45)" st:enabled="true" st:visible="true" />
+                  <tabitem name="Review" cp:screencoord="(645, 72)" cp:size="(90, 45)" st:enabled="true" st:visible="true" />
+                  <tabitem name="View" cp:screencoord="(736, 72)" cp:size="(71, 45)" st:enabled="true" st:visible="true" />
+                  <tabitem name="Help" cp:screencoord="(808, 72)" cp:size="(70, 45)" st:enabled="true" st:visible="true" />
+                  <button name="Comments" cp:screencoord="(1650, 76)" cp:size="(135, 36)" st:enabled="true" st:visible="true" />
+                  <menuitem name="Share" cp:screencoord="(1797, 72)" cp:size="(105, 45)" st:enabled="true" st:visible="true" />
+                </tab>
+                <pane name="Lower Ribbon" cp:screencoord="(12, 117)" cp:size="(1854, 149)" st:enabled="true" st:visible="true">
+                  <group name="View" cp:screencoord="(18, 117)" cp:size="(1848, 149)" st:enabled="true" st:visible="true">
+                    <group name="Sheet View" cp:screencoord="(18, 120)" cp:size="(398, 143)" st:enabled="true" st:visible="true">
+                      <combobox name="Switch Sheet View" cp:screencoord="(30, 135)" cp:size="(374, 36)" st:visible="true">
+                        <edit name="Default" cp:screencoord="(31, 137)" cp:size="(354, 31)" st:visible="true" />
+                        <button name="Open" cp:screencoord="(385, 136)" cp:size="(18, 34)" st:visible="true" />
+                      </combobox>
+                      <button name="Keep" cp:screencoord="(30, 183)" cp:size="(89, 36)" st:visible="true" />
+                      <button name="Exit" cp:screencoord="(122, 183)" cp:size="(77, 36)" st:visible="true" />
+                      <button name="New" cp:screencoord="(202, 183)" cp:size="(85, 36)" st:visible="true" />
+                      <button name="Options" cp:screencoord="(290, 183)" cp:size="(114, 36)" st:visible="true" />
+                    </group>
+                    <group name="Workbook Views" cp:screencoord="(416, 120)" cp:size="(353, 143)" st:enabled="true" st:visible="true">
+                      <button name="Normal" cp:screencoord="(428, 123)" cp:size="(67, 114)" st:enabled="true" st:visible="true" />
+                      <button name="Page Break Preview" cp:screencoord="(498, 123)" cp:size="(94, 114)" st:enabled="true" st:visible="true" />
+                      <button name="Page Layout" cp:screencoord="(595, 135)" cp:size="(146, 36)" st:enabled="true" st:visible="true" />
+                      <button name="Custom Views..." cp:screencoord="(595, 183)" cp:size="(162, 36)" st:enabled="true" st:visible="true" />
+                    </group>
+                    <group name="Show" cp:screencoord="(769, 120)" cp:size="(279, 143)" st:enabled="true" st:visible="true">
+                      <checkbox name="Ruler" cp:screencoord="(781, 123)" cp:size="(81, 36)" st:visible="true" />
+                      <checkbox name="Gridlines" cp:screencoord="(781, 162)" cp:size="(109, 36)" st:enabled="true" st:visible="true" />
+                      <checkbox name="Formula Bar" cp:screencoord="(781, 201)" cp:size="(136, 36)" st:enabled="true" st:visible="true" />
+                      <checkbox name="Headings" cp:screencoord="(920, 123)" cp:size="(116, 36)" st:enabled="true" st:visible="true" />
+                    </group>
+                    <group name="Zoom" cp:screencoord="(1048, 120)" cp:size="(233, 143)" st:enabled="true" st:visible="true">
+                      <button name="Zoom..." cp:screencoord="(1060, 123)" cp:size="(62, 114)" st:enabled="true" st:visible="true" />
+                      <button name="100%" cp:screencoord="(1125, 123)" cp:size="(62, 114)" st:enabled="true" st:visible="true" />
+                      <button name="Zoom to Selection" cp:screencoord="(1190, 123)" cp:size="(79, 114)" st:enabled="true" st:visible="true" />
+                    </group>
+                    <group name="Window" cp:screencoord="(1281, 120)" cp:size="(473, 143)" st:enabled="true" st:visible="true">
+                      <button name="New Window" cp:screencoord="(1293, 123)" cp:size="(156, 36)" st:enabled="true" st:visible="true" />
+                      <button name="Arrange All" cp:screencoord="(1293, 162)" cp:size="(138, 36)" st:enabled="true" st:visible="true" />
+                      <menuitem name="Freeze Panes" cp:screencoord="(1293, 201)" cp:size="(167, 36)" st:enabled="true" st:visible="true" />
+                      <button name="Split" cp:screencoord="(1463, 123)" cp:size="(85, 36)" st:enabled="true" st:visible="true" />
+                      <button name="Hide" cp:screencoord="(1463, 162)" cp:size="(87, 36)" st:enabled="true" st:visible="true" />
+                      <button name="Unhide..." cp:screencoord="(1463, 201)" cp:size="(106, 36)" st:visible="true" />
+                      <button name="View Side by Side" cp:screencoord="(1588, 123)" cp:size="(36, 36)" st:visible="true" />
+                      <button name="Synchronous Scrolling" cp:screencoord="(1588, 162)" cp:size="(36, 36)" st:visible="true" />
+                      <button name="Reset Window Position" cp:screencoord="(1588, 201)" cp:size="(36, 36)" st:visible="true" />
+                      <menuitem name="Switch Windows" cp:screencoord="(1643, 123)" cp:size="(99, 114)" st:enabled="true" st:visible="true" />
+                    </group>
+                    <group name="Macros" cp:screencoord="(1754, 120)" cp:size="(90, 143)" st:enabled="true" st:visible="true">
+                      <splitbutton name="Macros" cp:screencoord="(1766, 123)" cp:size="(66, 114)" st:enabled="true" st:visible="true">
+                        <button name="View Macros" cp:screencoord="(1766, 123)" cp:size="(66, 57)" st:enabled="true" st:visible="true" />
+                        <menuitem name="More Options" cp:screencoord="(1766, 180)" cp:size="(66, 57)" st:enabled="true" st:visible="true" />
+                      </splitbutton>
+                    </group>
+                  </group>
+                </pane>
+                <menuitem name="Ribbon Display Options" cp:screencoord="(1872, 230)" cp:size="(30, 30)" st:enabled="true" st:visible="true" />
+              </pane>
+            </pane>
+          </pane>
+        </pane>
+      </toolbar>
+    </pane>
+    <pane cp:screencoord="(0, 266)" cp:size="(310, 57)" st:enabled="true" st:visible="true">
+      <combobox name="Name Box" cp:screencoord="(13, 279)" cp:size="(150, 33)" st:enabled="true" st:visible="true">
+        <edit name="Name Box" cp:screencoord="(16, 282)" cp:size="(118, 27)" st:enabled="true" st:visible="true" />
+        <button name="Open" cp:screencoord="(138, 280)" cp:size="(24, 31)" st:enabled="true" st:visible="true" />
+      </combobox>
+    </pane>
+    <edit name="Date" cp:screencoord="(310, 266)" cp:size="(1610, 57)" st:enabled="true" st:visible="true" />
+    <pane cp:screencoord="(0, 323)" cp:size="(1920, 652)" st:enabled="true" st:visible="true">
+      <pane name="Vertical" cp:screencoord="(1892, 323)" cp:size="(26, 607)" st:enabled="true" st:visible="true">
+        <pane cp:screencoord="(1892, 323)" cp:size="(26, 607)" st:enabled="true" st:visible="true">
+          <scrollbar cp:screencoord="(1892, 323)" cp:size="(26, 607)" st:enabled="true" st:visible="true">
+            <button name="Line up" cp:screencoord="(1892, 323)" cp:size="(26, 26)" st:enabled="true" st:visible="true" />
+            <button name="Page up" cp:screencoord="(0, 0)" cp:size="(0, 0)" st:enabled="true" />
+            <thumb cp:screencoord="(1892, 349)" cp:size="(26, 527)" st:enabled="true" st:visible="true" />
+            <button name="Page down" cp:screencoord="(1892, 876)" cp:size="(26, 28)" st:enabled="true" st:visible="true" />
+            <button name="Line down" cp:screencoord="(1892, 904)" cp:size="(26, 26)" st:enabled="true" st:visible="true" />
+          </scrollbar>
+        </pane>
+      </pane>
+      <pane name="Horizontal" cp:screencoord="(1181, 937)" cp:size="(711, 26)" st:enabled="true" st:visible="true">
+        <pane cp:screencoord="(1181, 937)" cp:size="(711, 26)" st:enabled="true" st:visible="true">
+          <scrollbar cp:screencoord="(1181, 937)" cp:size="(711, 26)" st:enabled="true" st:visible="true">
+            <button name="Column left" cp:screencoord="(1181, 937)" cp:size="(26, 26)" st:enabled="true" st:visible="true" />
+            <button name="Page left" cp:screencoord="(0, 0)" cp:size="(0, 0)" st:enabled="true" />
+            <thumb cp:screencoord="(1207, 937)" cp:size="(624, 26)" st:enabled="true" st:visible="true" />
+            <button name="Page right" cp:screencoord="(1831, 937)" cp:size="(35, 26)" st:enabled="true" st:visible="true" />
+            <button name="Column right" cp:screencoord="(1866, 937)" cp:size="(26, 26)" st:enabled="true" st:visible="true" />
+          </scrollbar>
+        </pane>
+      </pane>
+      <pane cp:screencoord="(1133, 928)" cp:size="(48, 47)" st:enabled="true" st:visible="true" />
+      <pane name="Expense_Tracker" cp:screencoord="(0, 323)" cp:size="(1920, 652)" st:enabled="true" st:visible="true">
+        <tab name="Expense_Tracker" cp:screencoord="(0, 927)" cp:size="(1133, 48)" st:enabled="true" st:visible="true">
+          <button name="Scroll Left" cp:screencoord="(16, 927)" cp:size="(48, 48)" st:visible="true" />
+          <button name="Scroll Right" cp:screencoord="(64, 927)" cp:size="(48, 48)" st:visible="true" />
+          <button name="Add Sheet" cp:screencoord="(332, 927)" cp:size="(48, 48)" st:enabled="true" st:visible="true" />
+          <tabitem name="Expenses" cp:screencoord="(160, 927)" cp:size="(124, 48)" st:enabled="true" st:visible="true" />
+        </tab>
+        <pane name="Sheet Expenses" cp:screencoord="(0, 323)" cp:size="(1920, 604)" st:enabled="true" st:visible="true">
+          <datagrid name="Grid" cp:screencoord="(0, 323)" cp:size="(1889, 604)" st:enabled="true" st:visible="true">
+            <headeritem name="Select All" cp:screencoord="(0, 323)" cp:size="(40, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="A" cp:screencoord="(40, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="B" cp:screencoord="(136, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="C" cp:screencoord="(232, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="D" cp:screencoord="(328, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="E" cp:screencoord="(424, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="F" cp:screencoord="(520, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="G" cp:screencoord="(616, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="H" cp:screencoord="(712, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="I" cp:screencoord="(808, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="J" cp:screencoord="(904, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="K" cp:screencoord="(1000, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="L" cp:screencoord="(1096, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="M" cp:screencoord="(1192, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="N" cp:screencoord="(1288, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="O" cp:screencoord="(1384, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="P" cp:screencoord="(1480, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="Q" cp:screencoord="(1576, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="R" cp:screencoord="(1672, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="S" cp:screencoord="(1768, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="T" cp:screencoord="(1864, 323)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="1" cp:screencoord="(0, 352)" cp:size="(40, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="Date" cp:screencoord="(40, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="Category" cp:screencoord="(136, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="Description" cp:screencoord="(232, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="Amount" cp:screencoord="(328, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="Percentage" cp:screencoord="(424, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="F1" cp:screencoord="(520, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="G1" cp:screencoord="(616, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="H1" cp:screencoord="(712, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="I1" cp:screencoord="(808, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="J1" cp:screencoord="(904, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="K1" cp:screencoord="(1000, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="L1" cp:screencoord="(1096, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="M1" cp:screencoord="(1192, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="N1" cp:screencoord="(1288, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="O1" cp:screencoord="(1384, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="P1" cp:screencoord="(1480, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="Q1" cp:screencoord="(1576, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="R1" cp:screencoord="(1672, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="S1" cp:screencoord="(1768, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="T1" cp:screencoord="(1864, 352)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="2" cp:screencoord="(0, 381)" cp:size="(40, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="2024-01-05" cp:screencoord="(40, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="Rent" cp:screencoord="(136, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="January Rent" cp:screencoord="(232, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="1200" cp:screencoord="(328, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="4733.7%" cp:screencoord="(424, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="F2" cp:screencoord="(520, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="G2" cp:screencoord="(616, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="H2" cp:screencoord="(712, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="I2" cp:screencoord="(808, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="J2" cp:screencoord="(904, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="K2" cp:screencoord="(1000, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="L2" cp:screencoord="(1096, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="M2" cp:screencoord="(1192, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="N2" cp:screencoord="(1288, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="O2" cp:screencoord="(1384, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="P2" cp:screencoord="(1480, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="Q2" cp:screencoord="(1576, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="R2" cp:screencoord="(1672, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="S2" cp:screencoord="(1768, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="T2" cp:screencoord="(1864, 381)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="3" cp:screencoord="(0, 410)" cp:size="(40, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="2024-01-08" cp:screencoord="(40, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="Utilities" cp:screencoord="(136, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="Electricity Bill" cp:screencoord="(232, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="150" cp:screencoord="(328, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="591.7%" cp:screencoord="(424, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="F3" cp:screencoord="(520, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="G3" cp:screencoord="(616, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="H3" cp:screencoord="(712, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="I3" cp:screencoord="(808, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="J3" cp:screencoord="(904, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="K3" cp:screencoord="(1000, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="L3" cp:screencoord="(1096, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="M3" cp:screencoord="(1192, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="N3" cp:screencoord="(1288, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="O3" cp:screencoord="(1384, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="P3" cp:screencoord="(1480, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="Q3" cp:screencoord="(1576, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="R3" cp:screencoord="(1672, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="S3" cp:screencoord="(1768, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="T3" cp:screencoord="(1864, 410)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="4" cp:screencoord="(0, 439)" cp:size="(40, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="2024-01-10" cp:screencoord="(40, 439)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="Groceries" cp:screencoord="(136, 439)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="Supermarket" cp:screencoord="(232, 439)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="320" cp:screencoord="(328, 439)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="1262.3%" cp:screencoord="(424, 439)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="F4" cp:screencoord="(520, 439)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="G4" cp:screencoord="(616, 439)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="H4" cp:screencoord="(712, 439)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="I4" cp:screencoord="(808, 439)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="J4" cp:screencoord="(904, 439)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="K4" cp:screencoord="(1000, 439)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="L4" cp:screencoord="(1096, 439)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="M4" cp:screencoord="(1192, 439)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="N4" cp:screencoord="(1288, 439)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+            <dataitem name="O4" cp:screencoord="(1384, 439)" cp:size="(96, 29)" st:enabled="true" st:visible="true" />
+          </datagrid>
+        </pane>
+      </pane>
+    </pane>
+    <titlebar cp:screencoord="(0, -8)" cp:size="(1920, 8)" st:enabled="true" st:visible="true">
+      <menubar name="System" cp:screencoord="(0, 0)" cp:size="(33, 33)" st:enabled="true" st:visible="true">
+        <menuitem name="System" cp:screencoord="(0, 0)" cp:size="(33, 33)" st:enabled="true" st:visible="true" />
+      </menubar>
+      <button name="Minimize" cp:screencoord="(0, 0)" cp:size="(0, 0)" st:enabled="true" />
+      <button name="Restore" cp:screencoord="(0, 0)" cp:size="(0, 0)" st:enabled="true" />
+      <button name="Close" cp:screencoord="(0, 0)" cp:size="(0, 0)" st:enabled="true" />
+    </titlebar>
+    <menubar name="Worksheet Menu Bar" cp:screencoord="(0, 0)" cp:size="(0, 0)" st:enabled="true">
+      <combobox name="Ask a Question" cp:screencoord="(0, 0)" cp:size="(0, 0)" st:enabled="true" />
+    </menubar>
+  </window>
+</desktop-frame>

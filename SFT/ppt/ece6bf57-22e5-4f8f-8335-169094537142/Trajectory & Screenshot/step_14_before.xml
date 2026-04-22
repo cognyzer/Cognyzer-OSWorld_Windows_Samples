@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='utf-8'?>
+<desktop-frame name="Desktop">
+  <window name="Employee_Training - PowerPoint" cp:screencoord="(-11, -11)" cp:size="(1942, 1030)" st:visible="true">
+    <window name="Colors" cp:screencoord="(744, 204)" cp:size="(432, 567)" st:enabled="true" st:visible="true">
+      <edit name="0" cp:screencoord="(883, 524)" cp:size="(41, 26)" st:enabled="true" st:visible="true" />
+      <edit name="255" cp:screencoord="(883, 561)" cp:size="(41, 26)" st:enabled="true" st:visible="true" />
+      <edit name="255" cp:screencoord="(883, 598)" cp:size="(41, 26)" st:enabled="true" st:visible="true" />
+      <edit name="#00FFFF" cp:screencoord="(883, 635)" cp:size="(77, 26)" st:enabled="true" st:visible="true" />
+      <edit name="0 %" cp:screencoord="(942, 720)" cp:size="(59, 26)" st:enabled="true" st:visible="true" />
+      <scrollbar cp:screencoord="(764, 717)" cp:size="(162, 26)" st:enabled="true" st:visible="true">
+        <button name="Column left" cp:screencoord="(764, 717)" cp:size="(26, 26)" st:enabled="true" st:visible="true" />
+        <thumb name="Position" cp:screencoord="(790, 717)" cp:size="(26, 26)" st:enabled="true" st:visible="true" />
+        <button name="Page right" cp:screencoord="(816, 717)" cp:size="(84, 26)" st:enabled="true" st:visible="true" />
+        <button name="Column right" cp:screencoord="(900, 717)" cp:size="(26, 26)" st:enabled="true" st:visible="true" />
+      </scrollbar>
+      <titlebar cp:screencoord="(755, 207)" cp:size="(410, 42)" st:enabled="true" st:visible="true">
+        <button name="Minimize" cp:screencoord="(954, 205)" cp:size="(71, 44)" st:visible="true" />
+        <button name="Maximize" cp:screencoord="(1025, 205)" cp:size="(70, 44)" st:enabled="true" st:visible="true" />
+        <button name="Close" cp:screencoord="(1095, 205)" cp:size="(71, 44)" st:enabled="true" st:visible="true" />
+      </titlebar>
+      <tab cp:screencoord="(764, 260)" cp:size="(265, 34)" st:enabled="true" st:visible="true">
+        <tabitem name="Standard" cp:screencoord="(764, 262)" cp:size="(90, 31)" st:enabled="true" st:visible="true" />
+        <tabitem name="Custom" cp:screencoord="(854, 262)" cp:size="(81, 31)" st:enabled="true" st:visible="true" />
+      </tab>
+      <text name="Colors:" cp:screencoord="(778, 309)" cp:size="(48, 21)" st:enabled="true" st:visible="true" />
+      <image name="Colors:" cp:screencoord="(778, 335)" cp:size="(198, 140)" st:enabled="true" st:visible="true" />
+      <image name="Luminosity:" cp:screencoord="(990, 335)" cp:size="(25, 142)" st:enabled="true" st:visible="true" />
+      <text name="Color model:" cp:screencoord="(778, 488)" cp:size="(89, 21)" st:enabled="true" st:visible="true" />
+      <combobox name="Color model:" cp:screencoord="(881, 482)" cp:size="(134, 34)" st:enabled="true" st:visible="true" />
+      <text name="Red:" cp:screencoord="(778, 521)" cp:size="(30, 21)" st:enabled="true" st:visible="true" />
+      <spinner name="Red:" cp:screencoord="(881, 521)" cp:size="(71, 32)" st:enabled="true" st:visible="true" />
+      <text name="Green:" cp:screencoord="(778, 558)" cp:size="(45, 21)" st:enabled="true" st:visible="true" />
+      <spinner name="Green:" cp:screencoord="(881, 558)" cp:size="(71, 32)" st:enabled="true" st:visible="true" />
+      <text name="Blue:" cp:screencoord="(778, 595)" cp:size="(33, 21)" st:enabled="true" st:visible="true" />
+      <spinner name="Blue:" cp:screencoord="(881, 595)" cp:size="(71, 32)" st:enabled="true" st:visible="true" />
+      <text name="Hex:" cp:screencoord="(778, 632)" cp:size="(29, 21)" st:enabled="true" st:visible="true" />
+      <edit name="Hex:" cp:screencoord="(881, 632)" cp:size="(81, 32)" st:enabled="true" st:visible="true" />
+      <text name="Transparency:" cp:screencoord="(764, 691)" cp:size="(96, 21)" st:enabled="true" st:visible="true" />
+      <spinner name="Transparency:" cp:screencoord="(940, 717)" cp:size="(89, 32)" st:enabled="true" st:visible="true" />
+      <scrollbar cp:screencoord="(764, 717)" cp:size="(162, 26)" st:enabled="true" st:visible="true" />
+      <button name="OK" cp:screencoord="(1042, 259)" cp:size="(114, 38)" st:enabled="true" st:visible="true" />
+      <button name="Cancel" cp:screencoord="(1042, 307)" cp:size="(114, 38)" st:enabled="true" st:visible="true" />
+      <image cp:screencoord="(1043, 610)" cp:size="(113, 113)" st:enabled="true" st:visible="true" />
+      <text name="Current " cp:screencoord="(1071, 728)" cp:size="(57, 21)" st:enabled="true" st:visible="true" />
+      <text name="New " cp:screencoord="(1081, 584)" cp:size="(36, 21)" st:enabled="true" st:visible="true" />
+      <image name="New " cp:screencoord="(764, 294)" cp:size="(265, 384)" st:enabled="true" st:visible="true" />
+    </window>
+    <pane name="DropShadowTop" cp:screencoord="(0, 266)" cp:size="(1920, 9)" st:visible="true" />
+    <pane name="MsoDockRight" cp:screencoord="(1492, 266)" cp:size="(428, 709)" st:visible="true">
+      <toolbar cp:screencoord="(1492, 266)" cp:size="(428, 709)" st:enabled="true" st:visible="true">
+        <window name="Format Background" cp:screencoord="(1500, 321)" cp:size="(412, 647)" st:enabled="true" st:visible="true">
+          <pane cp:screencoord="(1500, 321)" cp:size="(412, 647)" st:visible="true">
+            <pane cp:screencoord="(1500, 321)" cp:size="(412, 647)" st:enabled="true" st:visible="true">
+              <custom name="Format Background" cp:screencoord="(1500, 321)" cp:size="(412, 647)" st:enabled="true" st:visible="true">
+                <menu cp:screencoord="(1512, 332)" cp:size="(391, 46)" st:enabled="true" st:visible="true">
+                  <listitem name="Fill" cp:screencoord="(1512, 332)" cp:size="(46, 46)" st:enabled="true" st:visible="true" />
+                </menu>
+                <pane cp:screencoord="(1509, 407)" cp:size="(394, 500)" st:enabled="true" st:visible="true">
+                  <group name="Fill" cp:screencoord="(1509, 407)" cp:size="(368, 344)" st:enabled="true" st:visible="true">
+                    <button name="Fill" cp:screencoord="(1513, 410)" cp:size="(360, 27)" st:enabled="true" st:visible="true">
+                      <image cp:screencoord="(1514, 411)" cp:size="(24, 24)" st:enabled="true" st:visible="true" />
+                      <text name="Fill" cp:screencoord="(1542, 411)" cp:size="(27, 25)" st:enabled="true" st:visible="true" />
+                    </button>
+                    <group name="Fill" cp:screencoord="(1541, 455)" cp:size="(332, 139)" st:enabled="true" st:visible="true">
+                      <radiobutton name="Solid fill" cp:screencoord="(1541, 455)" cp:size="(96, 31)" st:enabled="true" st:visible="true" />
+                      <radiobutton name="Gradient fill" cp:screencoord="(1541, 491)" cp:size="(123, 31)" st:enabled="true" st:visible="true" />
+                      <radiobutton name="Picture or texture fill" cp:screencoord="(1541, 527)" cp:size="(190, 31)" st:enabled="true" st:visible="true" />
+                      <radiobutton name="Pattern fill" cp:screencoord="(1541, 563)" cp:size="(111, 31)" st:enabled="true" st:visible="true" />
+                    </group>
+                    <checkbox name="Hide background graphics" cp:screencoord="(1541, 603)" cp:size="(243, 31)" st:enabled="true" st:visible="true" />
+                    <text name="Color" cp:screencoord="(1556, 653)" cp:size="(46, 41)" st:enabled="true" st:visible="true" />
+                    <menuitem name="Fill Color Automatic" cp:screencoord="(1807, 653)" cp:size="(66, 41)" st:enabled="true" st:visible="true" />
+                    <text name="Transparency" cp:screencoord="(1556, 708)" cp:size="(105, 25)" st:enabled="true" st:visible="true" />
+                    <slider name="Transparency" cp:screencoord="(1668, 709)" cp:size="(79, 24)" st:enabled="true" st:visible="true">
+                      <button name="Page left" cp:screencoord="(0, 0)" cp:size="(0, 0)" st:enabled="true" />
+                      <thumb name="Position" cp:screencoord="(1671, 712)" cp:size="(12, 18)" st:enabled="true" st:visible="true" />
+                      <button name="Page right" cp:screencoord="(1683, 712)" cp:size="(61, 18)" st:enabled="true" st:visible="true" />
+                    </slider>
+                    <spinner name="Transparency" cp:screencoord="(1751, 703)" cp:size="(122, 36)" st:enabled="true" st:visible="true">
+                      <edit name="0%" cp:screencoord="(1752, 704)" cp:size="(94, 34)" st:enabled="true" st:visible="true" />
+                      <button name="More" cp:screencoord="(1846, 704)" cp:size="(26, 17)" st:enabled="true" st:visible="true" />
+                      <button name="Less" cp:screencoord="(1846, 721)" cp:size="(26, 17)" st:enabled="true" st:visible="true" />
+                    </spinner>
+                  </group>
+                  <scrollbar cp:screencoord="(1877, 407)" cp:size="(26, 500)" st:visible="true" />
+                </pane>
+                <button name="Apply to All" cp:screencoord="(1509, 916)" cp:size="(119, 35)" st:enabled="true" st:visible="true" />
+                <button name="Reset Background" cp:screencoord="(1642, 916)" cp:size="(167, 35)" st:visible="true" />
+              </custom>
+            </pane>
+          </pane>
+        </window>
+        <menuitem name="Task Pane Options" cp:screencoord="(1803, 274)" cp:size="(48, 48)" st:enabled="true" st:visible="true" />
+      </toolbar>
+    </pane>
+    <pane name="MsoDockTop" cp:screencoord="(0, 0)" cp:size="(1920, 266)" st:visible="true">
+      <toolbar cp:screencoord="(0, 0)" cp:size="(1920, 266)" st:enabled="true" st:visible="true">
+        <pane name="Ribbon" cp:screencoord="(0, 0)" cp:size="(1920, 266)" st:enabled="true" st:visible="true">
+          <pane cp:screencoord="(0, 0)" cp:size="(1920, 266)" st:visible="true">
+            <pane cp:screencoord="(0, 0)" cp:size="(1920, 266)" st:enabled="true" st:visible="true">
+              <pane name="Ribbon" cp:screencoord="(0, 0)" cp:size="(1920, 266)" st:enabled="true" st:visible="true">
+                <toolbar name="Quick Access Toolbar" cp:screencoord="(63, 0)" cp:size="(388, 72)" st:enabled="true" st:visible="true">
+                  <button name="AutoSave" cp:screencoord="(63, 14)" cp:size="(158, 44)" st:enabled="true" st:visible="true" />
+                  <button name="Save" cp:screencoord="(222, 14)" cp:size="(42, 43)" st:enabled="true" st:visible="true" />
+                  <splitbutton name="Undo" cp:screencoord="(265, 14)" cp:size="(56, 43)" st:enabled="true" st:visible="true">
+                    <button name="Undo" cp:screencoord="(265, 14)" cp:size="(37, 43)" st:enabled="true" st:visible="true" />
+                    <menuitem name="More Options" cp:screencoord="(302, 14)" cp:size="(19, 43)" st:enabled="true" st:visible="true" />
+                  </splitbutton>
+                  <button name="Redo" cp:screencoord="(322, 14)" cp:size="(42, 43)" st:enabled="true" st:visible="true" />
+                  <button name="From Beginning" cp:screencoord="(365, 14)" cp:size="(42, 43)" st:enabled="true" st:visible="true" />
+                  <menuitem name="Customize Quick Access Toolbar" cp:screencoord="(409, 13)" cp:size="(42, 46)" st:enabled="true" st:visible="true" />
+                </toolbar>
+                <titlebar name="‪Employee_Training‬  -  Saved to this PC" cp:screencoord="(452, 0)" cp:size="(373, 72)" st:enabled="true" st:visible="true">
+                  <menuitem name="‪Employee_Training‬  -  Saved to this PC" cp:screencoord="(452, 0)" cp:size="(343, 72)" st:enabled="true" st:visible="true" />
+                </titlebar>
+                <menuitem name="Type to search and use the up and down arrow keys to navigate" cp:screencoord="(825, 12)" cp:size="(518, 48)" st:enabled="true" st:visible="true">
+                  <edit cp:screencoord="(886, 21)" cp:size="(438, 32)" st:enabled="true" st:visible="true" />
+                </menuitem>
+                <menuitem name="Pragnasya S" cp:screencoord="(1629, 0)" cp:size="(75, 72)" st:enabled="true" st:visible="true" />
+                <button name="Minimize" cp:screencoord="(1704, 0)" cp:size="(72, 72)" st:enabled="true" st:visible="true" />
+                <button name="Restore Down" cp:screencoord="(1776, 0)" cp:size="(72, 72)" st:enabled="true" st:visible="true" />
+                <button name="Close" cp:screencoord="(1848, 0)" cp:size="(72, 72)" st:enabled="true" st:visible="true" />
+                <button name="File Tab" cp:screencoord="(6, 72)" cp:size="(81, 45)" st:enabled="true" st:visible="true" />
+                <tab name="Ribbon Tabs" cp:screencoord="(87, 72)" cp:size="(1815, 45)" st:enabled="true" st:visible="true">
+                  <tabitem name="Home" cp:screencoord="(87, 72)" cp:size="(83, 45)" st:enabled="true" st:visible="true" />
+                  <tabitem name="Insert" cp:screencoord="(171, 72)" cp:size="(80, 45)" st:enabled="true" st:visible="true" />
+                  <tabitem name="Draw" cp:screencoord="(252, 72)" cp:size="(73, 45)" st:enabled="true" st:visible="true" />
+                  <tabitem name="Design" cp:screencoord="(326, 72)" cp:size="(90, 45)" st:enabled="true" st:visible="true" />
+                  <tabitem name="Transitions" cp:screencoord="(417, 72)" cp:size="(124, 45)" st:enabled="true" st:visible="true" />
+                  <tabitem name="Animations" cp:screencoord="(542, 72)" cp:size="(130, 45)" st:enabled="true" st:visible="true" />
+                  <tabitem name="Slide Show" cp:screencoord="(673, 72)" cp:size="(127, 45)" st:enabled="true" st:visible="true" />
+                  <tabitem name="Record" cp:screencoord="(801, 72)" cp:size="(89, 45)" st:enabled="true" st:visible="true" />
+                  <tabitem name="Review" cp:screencoord="(891, 72)" cp:size="(90, 45)" st:enabled="true" st:visible="true" />
+                  <tabitem name="View" cp:screencoord="(982, 72)" cp:size="(71, 45)" st:enabled="true" st:visible="true" />
+                  <tabitem name="Help" cp:screencoord="(1054, 72)" cp:size="(70, 45)" st:enabled="true" st:visible="true" />
+                  <button name="Comments" cp:screencoord="(1749, 76)" cp:size="(36, 36)" st:enabled="true" st:visible="true" />
+                  <menuitem name="Share" cp:screencoord="(1797, 72)" cp:size="(105, 45)" st:enabled="true" st:visible="true" />
+                </tab>
+                <pane name="Lower Ribbon" cp:screencoord="(12, 117)" cp:size="(1854, 149)" st:enabled="true" st:visible="true">
+                  <group name="Design" cp:screencoord="(18, 117)" cp:size="(1848, 149)" st:enabled="true" st:visible="true">
+                    <group name="Themes" cp:screencoord="(18, 120)" cp:size="(908, 143)" st:enabled="true" st:visible="true">
+                      <group name="Themes" cp:screencoord="(30, 130)" cp:size="(884, 94)" st:enabled="true" st:visible="true">
+                        <menuitem cp:screencoord="(30, 134)" cp:size="(884, 90)" st:enabled="true" st:visible="true">
+                          <pane name="Themes" cp:screencoord="(32, 137)" cp:size="(842, 84)" st:enabled="true" st:visible="true">
+                            <datagrid name="Themes" cp:screencoord="(33, 137)" cp:size="(840, 588)" st:enabled="true" st:visible="true">
+                              <listitem name="Training Infographics by Slidesgo" cp:screencoord="(33, 137)" cp:size="(140, 84)" st:enabled="true" st:visible="true" />
+                              <listitem name="Office Theme" cp:screencoord="(173, 137)" cp:size="(140, 84)" st:enabled="true" st:visible="true" />
+                              <listitem name="Facet" cp:screencoord="(313, 137)" cp:size="(140, 84)" st:enabled="true" st:visible="true" />
+                              <listitem name="Gallery" cp:screencoord="(453, 137)" cp:size="(140, 84)" st:enabled="true" st:visible="true" />
+                              <listitem name="Integral" cp:screencoord="(593, 137)" cp:size="(140, 84)" st:enabled="true" st:visible="true" />
+                              <listitem name="Ion" cp:screencoord="(733, 137)" cp:size="(140, 84)" st:enabled="true" st:visible="true" />
+                              <listitem name="Ion Boardroom" cp:screencoord="(33, 221)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Organic" cp:screencoord="(173, 221)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Retrospect" cp:screencoord="(313, 221)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Slice" cp:screencoord="(453, 221)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Wisp" cp:screencoord="(593, 221)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Atlas" cp:screencoord="(733, 221)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Banded" cp:screencoord="(33, 305)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Basis" cp:screencoord="(173, 305)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Berlin" cp:screencoord="(313, 305)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Celestial" cp:screencoord="(453, 305)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Circuit" cp:screencoord="(593, 305)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Damask" cp:screencoord="(733, 305)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Depth" cp:screencoord="(33, 389)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Dividend" cp:screencoord="(173, 389)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Droplet" cp:screencoord="(313, 389)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Facet" cp:screencoord="(453, 389)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Frame" cp:screencoord="(593, 389)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Gallery" cp:screencoord="(733, 389)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Integral" cp:screencoord="(33, 473)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Ion" cp:screencoord="(173, 473)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Ion Boardroom" cp:screencoord="(313, 473)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Madison" cp:screencoord="(453, 473)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Organic" cp:screencoord="(593, 473)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Main Event" cp:screencoord="(733, 473)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Mesh" cp:screencoord="(33, 557)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Metropolitan" cp:screencoord="(173, 557)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Parallax" cp:screencoord="(313, 557)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Parcel" cp:screencoord="(453, 557)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Retrospect" cp:screencoord="(593, 557)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Savon" cp:screencoord="(733, 557)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Slate" cp:screencoord="(33, 641)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Wisp" cp:screencoord="(173, 641)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Vapor Trail" cp:screencoord="(313, 641)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="View" cp:screencoord="(453, 641)" cp:size="(140, 84)" st:enabled="true" />
+                              <listitem name="Wood Type" cp:screencoord="(593, 641)" cp:size="(140, 84)" st:enabled="true" />
+                            </datagrid>
+                          </pane>
+                          <button name="Themes" cp:screencoord="(874, 134)" cp:size="(36, 90)" st:enabled="true" st:visible="true">
+                            <image cp:screencoord="(886, 173)" cp:size="(12, 12)" st:enabled="true" st:visible="true" />
+                          </button>
+                        </menuitem>
+                      </group>
+                    </group>
+                    <group name="Variants" cp:screencoord="(926, 120)" cp:size="(628, 143)" st:enabled="true" st:visible="true">
+                      <group name="Variants" cp:screencoord="(938, 130)" cp:size="(604, 94)" st:enabled="true" st:visible="true">
+                        <menuitem cp:screencoord="(938, 134)" cp:size="(604, 90)" st:enabled="true" st:visible="true">
+                          <pane name="Variants" cp:screencoord="(940, 137)" cp:size="(562, 84)" st:enabled="true" st:visible="true">
+                            <datagrid name="Variants" cp:screencoord="(941, 137)" cp:size="(560, 84)" st:visible="true">
+                              <listitem cp:screencoord="(941, 137)" cp:size="(140, 84)" st:visible="true" />
+                            </datagrid>
+                          </pane>
+                          <button name="Variants" cp:screencoord="(1502, 134)" cp:size="(36, 90)" st:enabled="true" st:visible="true">
+                            <image cp:screencoord="(1514, 173)" cp:size="(12, 12)" st:enabled="true" st:visible="true" />
+                          </button>
+                        </menuitem>
+                      </group>
+                    </group>
+                    <group name="Customize" cp:screencoord="(1554, 120)" cp:size="(192, 143)" st:enabled="true" st:visible="true">
+                      <menuitem name="Slide Size" cp:screencoord="(1566, 123)" cp:size="(62, 114)" st:enabled="true" st:visible="true" />
+                      <button name="Format Background" cp:screencoord="(1631, 123)" cp:size="(103, 114)" st:enabled="true" st:visible="true" />
+                    </group>
+                  </group>
+                </pane>
+                <menuitem name="Ribbon Display Options" cp:screencoord="(1872, 230)" cp:size="(30, 30)" st:enabled="true" st:visible="true" />
+              </pane>
+            </pane>
+          </pane>
+        </pane>
+      </toolbar>
+    </pane>
+    <pane name="MsoDockBottom" cp:screencoord="(0, 975)" cp:size="(1920, 33)" st:visible="true">
+      <toolbar cp:screencoord="(0, 975)" cp:size="(1920, 33)" st:enabled="true" st:visible="true">
+        <pane name="Status Bar" cp:screencoord="(0, 975)" cp:size="(1920, 33)" st:enabled="true" st:visible="true">
+          <pane cp:screencoord="(0, 975)" cp:size="(1920, 33)" st:visible="true">
+            <pane cp:screencoord="(0, 975)" cp:size="(1920, 33)" st:enabled="true" st:visible="true">
+              <statusbar name="Status Bar" cp:screencoord="(0, 975)" cp:size="(1920, 33)" st:enabled="true" st:visible="true">
+                <text name="View Indicator Slide 4 of 20" cp:screencoord="(6, 976)" cp:size="(110, 32)" st:enabled="true" st:visible="true" />
+                <button name="Spell Check No Errors" cp:screencoord="(121, 976)" cp:size="(47, 32)" st:enabled="true" st:visible="true" />
+                <button name="Language English (United States)" cp:screencoord="(168, 976)" cp:size="(178, 32)" st:enabled="true" st:visible="true" />
+                <button name="Accessibility Checker Accessibility: Investigate" cp:screencoord="(346, 976)" cp:size="(238, 32)" st:enabled="true" st:visible="true" />
+                <button name="Notes " cp:screencoord="(1281, 976)" cp:size="(91, 32)" st:enabled="true" st:visible="true" />
+                <button name="Normal" cp:screencoord="(1387, 976)" cp:size="(60, 32)" st:enabled="true" st:visible="true" />
+                <button name="Slide Sorter" cp:screencoord="(1447, 976)" cp:size="(60, 32)" st:enabled="true" st:visible="true" />
+                <button name="Reading View" cp:screencoord="(1507, 976)" cp:size="(60, 32)" st:enabled="true" st:visible="true" />
+                <button name="Slide Show" cp:screencoord="(1567, 976)" cp:size="(60, 32)" st:enabled="true" st:visible="true" />
+                <button name="Zoom Out" cp:screencoord="(1628, 976)" cp:size="(26, 32)" st:enabled="true" st:visible="true" />
+                <slider name="Zoom" cp:screencoord="(1654, 976)" cp:size="(150, 32)" st:enabled="true" st:visible="true">
+                  <button name="Zoom Out" cp:screencoord="(1654, 976)" cp:size="(54, 32)" st:enabled="true" st:visible="true" />
+                  <thumb name="Position" cp:screencoord="(1708, 983)" cp:size="(8, 17)" st:enabled="true" st:visible="true" />
+                  <button name="Zoom In" cp:screencoord="(1716, 976)" cp:size="(88, 32)" st:enabled="true" st:visible="true" />
+                </slider>
+                <button name="Zoom In" cp:screencoord="(1804, 976)" cp:size="(26, 32)" st:enabled="true" st:visible="true" />
+                <button name="Zoom 78%" cp:screencoord="(1830, 976)" cp:size="(54, 32)" st:enabled="true" st:visible="true" />
+                <button name="Zoom to Fit " cp:screencoord="(1884, 976)" cp:size="(36, 32)" st:enabled="true" st:visible="true" />
+              </statusbar>
+            </pane>
+          </pane>
+        </pane>
+      </toolbar>
+    </pane>
+    <pane name="Workspace" cp:screencoord="(0, 266)" cp:size="(1492, 709)" st:enabled="true" st:visible="true">
+      <pane cp:screencoord="(-11, 221)" cp:size="(1514, 765)" st:enabled="true" st:visible="true">
+        <titlebar cp:screencoord="(0, 232)" cp:size="(1492, 33)" st:enabled="true" st:visible="true" />
+      </pane>
+    </pane>
+    <titlebar cp:screencoord="(0, -8)" cp:size="(1920, 8)" st:enabled="true" st:visible="true">
+      <menubar name="System" cp:screencoord="(0, 0)" cp:size="(33, 33)" st:enabled="true" st:visible="true">
+        <menuitem name="System" cp:screencoord="(0, 0)" cp:size="(33, 33)" st:enabled="true" st:visible="true" />
+      </menubar>
+      <button name="Minimize" cp:screencoord="(0, 0)" cp:size="(0, 0)" st:enabled="true" />
+      <button name="Restore" cp:screencoord="(0, 0)" cp:size="(0, 0)" st:enabled="true" />
+      <button name="Close" cp:screencoord="(0, 0)" cp:size="(0, 0)" st:enabled="true" />
+    </titlebar>
+  </window>
+</desktop-frame>
